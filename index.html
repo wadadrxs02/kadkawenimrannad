@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML Meta Tags -->
+    <title>WalimatulUrus Nadhirah | Imran </title>
+    <meta name="description" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://imrannadhiku.kahwin.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Walimatul Urus Nadhirah | Imran ">
+    <meta property="og:image" content="https://imrannadhiku.kahwin.me/images/covers/girl.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="imrannadhiku.kahwin.me">
+    <meta property="twitter:url" content="https://imrannadhiku.kahwin.me/">
+    <meta name="twitter:title" content="Walimatul Urus Nadhirah | Imran ">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://imrannadhiku.kahwin.me/images/covers/girl.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+    <meta charset utf="8">
+    <script src="jquery.nicescroll.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--component-css-->
+    <link rel="icon" href="images/icons/rings.png">
+    <style>
+        .hide {
+            display: none !important;
+            visibility: hidden !important;
+
+        }
+
+        .unhide {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        .modal-container {
+            background-image: url(images/covers/nadh.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: fixed;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_frame">
+        <iframe src="home.html" style="width:100vw;height:100vh" class="size_frame"></iframe>
+        <div class="modal-container size_frame" id="modal-covid" onclick="hideModal();" onscroll="hideModal();">
+        </div>
+    </div>
+    <!--============END TIMER================-->
+    <!-- toolbar bottom -->
+    <footer class="toolbar " id="footer">
+        <ul class="toolbar-bottom toolbar-wrap ">
+            <li class="toolbar-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalCalendar"><i
+                        class="fas fa-calendar-alt"></i><br>Kalendar</a>
+            </li>
+            <li class="toolbar-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalMap"><i
+                        class="fas fa-map-marker-alt"></i><br>Lokasi</a>
+            </li>
+            <li class="toolbar-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalContact"><i
+                        class="fas fa-address-book"></i><br>Hubungi</a>
+            </li>
+            <li class="toolbar-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalRSVP"><i
+                        class="fas fa-envelope-open-text"></i><br>RSVP</a>
+            </li>
+        </ul>
+    </footer>
+    <!--=========================================START MODAL RSVP==================================================-->
+
+    <div class="modal fade" id="ModalRSVP" tabindex="-1" role="dialog" aria-labelledby="ModalRSVPLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalRSVPTitle">RSVP Walimatul Urus</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="rsvpform" method="post" id="sheetdb-form"
+                        action="https://sheetdb.io/api/v1/ztrb24avk9zf1">
+                        <div class="form-group rsvpform">
+                            <label for="kedatangan">Kehadiran:</label>
+                            <select class="form-control" id="kedatangan" name="data[kedatangan]" required>
+                                <option value="">Pilih Hadir atau Tidak</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak">Tidak Hadir</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group rsvpform" id="namaform">
+                            <label>Nama:</label>
+                            <input type="text" class="form-control" placeholder="Sila Isi Nama Anda" name="data[nama]"
+                                id="nama" required>
+                        </div>
+                        <div class="form-group" id="jumlahkedatanganform">
+                            <label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
+                            </label>
+                            <select class="form-control" name="data[jumlah]">
+                                <option value="">Sila Pilih Jumlah Kedatangan Anda</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit">Hantar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- kalendar modal -->
+    <div class="modal fade" id="ModalCalendar" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalCalendarTitle">Kalendar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mx-auto center">
+                        <a title="Add to Calendar" class="addeventatc" data-id="CQ22239642"
+                            href="https://www.addevent.com/event/CQ22239642" target="_blank">Add to Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end calendar modal -->
+    <!--=========================================START Modal Contact==================================================-->
+
+    <div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hubungi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="info-item d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <strong> Encik Abdul Hakim</strong>
+                            <p class="text-muted mb-0">Bapa Pengantin</p>
+                        </div>
+                        <div>
+                            <a href="https://wa.link/eibtwn" class="text-dark me-3 px-3"><i
+                                    class="fab fa-whatsapp fa-xl"></i></a>
+                            <a href="tel:+60107693001" class="text-dark"><i class="fas fa-phone fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="info-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Puan Suriani</strong>
+                            <p class="text-muted mb-0">Ibu Pengantin</p>
+                        </div>
+                        <div>
+                            <a href="https://wa.link/s049oo" class="text-dark me-3 px-3"><i
+                                    class="fab fa-whatsapp fa-xl"></i></a>
+                            <a href="tel:+60196241900" class="text-dark"><i class="fas fa-phone fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="info-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Muhammad Imran</strong>
+                            <p class="text-muted mb-0">Adik Pengantin</p>
+                        </div>
+                        <div>
+                            <a href="https://wa.link/2xdjvi" class="text-dark me-3 px-3"><i
+                                    class="fab fa-whatsapp fa-xl"></i></a>
+                            <a href="tel:+601110453001" class="text-dark"><i class="fas fa-phone fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================END Modal Contact==================================================-->
+
+    <!--================================START Modal Map===========================================================-->
+
+    <div class="modal fade" id="ModalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lokasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Google Map Copied Code -->
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.4882927189656!2d101.7570475!3d2.9619256999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb5909821a27%3A0xc5badc0c26a82f1a!2sAsiana%20Grand%20Hall%20Bangi!5e0!3m2!1sen!2smy!4v1719674437896!5m2!1sen!2smy"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="gridcontainer2">
+                        <div class="griditem2">
+                            <a href="https://waze.com/ul/hw282ge1nz" target="_blank">
+
+                                <img src="images/button/waze.svg" alt="" width="150"><br>
+                            </a>
+                        </div>
+                        <div class="griditem2">
+                            <a href="https://maps.app.goo.gl/kzZ6n1BQ9eH3iLEL9" target="_blank">
+                                <img src="images/button/googlemap.svg" alt="" width="150"> <br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================================END Modal Map===========================================================-->
+    <script src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js"></script>
+    <!-- end toolbar bottom -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://kit.fontawesome.com/4bc1e74ed0.js" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <script>
+        function play() {
+            let audio = new Audio("nadh_song.mp3");
+            setTimeout(function () {
+                audio.currentTime = 6;
+                audio.play();
+            },
+            )
+        }
+        function hideModal() {
+            const modal = document.getElementById('modal-covid')
+            modal.classList.add('hide')
+            play()
+            const footer = document.getElementById('footer')
+            footer.classList.add('unhide')
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            if (!(isIOS && isSafari)) {
+                var arButton = document.getElementById('AR-ios-button');
+                if (arButton) {
+                    arButton.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
