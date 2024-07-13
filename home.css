@@ -27,7 +27,7 @@
 
 .cover-bg-2 {
   background-image: url(images/covers/girl2.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 190vh;
@@ -39,7 +39,7 @@
 @media (max-width: 360px) {
   .cover-bg-2 {
     background-image: url(images/covers/girl2.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 200vh;
