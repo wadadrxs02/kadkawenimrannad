@@ -4,10 +4,11 @@
 
 .cover-bg-1 {
   background-image: url(images/covers/girl.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 90vh;
+  height: 85vh;
+  width: auto;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +16,7 @@
 @media (max-width: 360px) {
   .cover-bg-1 {
     background-image: url(images/covers/girl.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
@@ -67,7 +68,7 @@
 /* nav-bar */
 
 .navbar {
-  background-color: #839073; /* Match the background color */
+  background-color: #3a3a3a; /* Match the background color */
 }
 
 .nav-link {
@@ -104,7 +105,7 @@
 
 .toolbar-bottom {
   position: fixed;
-  background: #a4774b;
+  background: #3a3a3a;
   height: 60px;
   bottom: 0vh;
   left: 0;
@@ -179,7 +180,11 @@
 }
 
 .modal-header {
-  background-color: #a77d52;
+  background-color: #3a3a3a;
+}
+
+.modal-title {
+  color: white;
 }
 
 .buttonhadir {
@@ -383,8 +388,8 @@
 #timer {
   font-size: 2.5em;
   font-weight: 100;
-  color: #a77d52;
-  text-shadow: 0 0 20px #a77d52;
+  color: #3a3a3a;
+  text-shadow: 0 0 20px #3a3a3a;
 }
 
 #timer div {
@@ -403,7 +408,7 @@
     position: relative;
     width: 70vmin;
     height: 70vmin;
-    background: #a77d52;
+    background: #3a3a3a;
     -webkit-clip-path: polygon(
       50% 0%,
       83% 12%,
@@ -500,7 +505,7 @@ body {
   background-color: white;
 }
 .btn-primary {
-  background-color: #a77d52 !important;
+  background-color: #3a3a3a !important;
   border: 0;
   color: #000000;
 }
@@ -571,7 +576,7 @@ ul {
 
 .button-17:hover {
   background: #fdf0d5;
-  color: #a77d52;
+  color: #3a3a3a;
 }
 
 .button-17:active {
@@ -582,7 +587,7 @@ ul {
 
 .button-17:focus {
   outline: none;
-  border: 2px solid #a77d52;
+  border: 2px solid #3a3a3a;
 }
 
 .button-17:not(:disabled) {
